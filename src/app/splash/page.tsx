@@ -1,10 +1,8 @@
 import Link from 'next/link';
 
-import { supabase } from '@/utils/supabaseClient';
-
 const Page = async () => {
-  const user = await supabase.auth.getUser();
-  console.log(user);
+  // Mock user check - in a real app, you'd check authentication status
+  console.log('Mock user check');
   return (
     <div className="h-screen flex flex-col gap-[4.5rem] items-center onboarding-bg ">
       <div className="flex flex-col items-center gap-[0.125rem] mt-[5rem]">
